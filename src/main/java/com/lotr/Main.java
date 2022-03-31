@@ -24,8 +24,9 @@ public class Main {
     private static final Logger logger = LogManager.getRootLogger();
 
     public static void main(String[] args) {
+        Cast castList;
 
-        Cast castList = new Cast();
+        castList = new Cast();
         castList.loadCastOfLOTR();
         castList.printCast();
         castList.readCastFromJSONFile();

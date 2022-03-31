@@ -107,4 +107,18 @@ public class Cast {
         System.out.println("..printCast ends");
     }
 
+    /**
+     *
+     */
+    public static void main(String[] args) {
+        Cast castList;
+
+        castList = new Cast();
+        castList.loadCastOfLOTR();
+        castList.printCast();
+        castList.readCastFromJSONFile();
+        castList.writeCastToJSONFile();
+        castList.readCastFromTXTFile();
+        castList.writeCastToTXTFile();
+    }
 }

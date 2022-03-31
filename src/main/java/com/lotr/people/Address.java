@@ -25,7 +25,16 @@ public class Address {
     }
 
     public String toString () {
-        return "Address[" + _residenceAddress + "]";
+        return "Address["
+                .concat(_residenceAddress)
+                .concat("]");
     }
 
+    /**
+     *
+     */
+    public static void main(String[] args) {
+        Address address = new Address("16 Parkside Lane");
+        System.out.println("Address is:" + address);
+    }
 }

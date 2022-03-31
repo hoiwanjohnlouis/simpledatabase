@@ -17,9 +17,11 @@
 package com.lotr.creatures;
 
 public class Balrog extends Animal {
-
+    /**
+     *
+     */
     public static void main(String[] args) {
+        Balrog balrog;
 
     }
-
 }

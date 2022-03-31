@@ -31,8 +31,21 @@ public class OnePerson
     }
 
     public String toString () {
-        return _characterName.toString() + " "
-                + _homeAddress.toString() + " "
-                + _typeOfCharacter.toString();
+        return _characterName
+                .concat(" ")
+                .concat(String.valueOf(_homeAddress))
+                .concat(" ")
+                .concat(String.valueOf(_typeOfCharacter));
+    }
+
+
+    /**
+     *
+     */
+    public static void main(String[] args) {
+        OnePerson onePerson;
+
+        onePerson = new OnePerson("Bilbo Baggins", "Bag End, Shire", CharacterType.HOBBIT);
+        System.out.println("OnePerson:" + onePerson);
     }
 }
